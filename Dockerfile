@@ -13,4 +13,4 @@ COPY backend/ ./
 
 EXPOSE ${PORT:-3000}
 
-CMD ["node", "index.js"]
+CMD ["node", "dist/index.js"]
