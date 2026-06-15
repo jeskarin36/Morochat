@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
 
-const messageSchema =new mongoose.Schema({
+const messageSchema = new mongoose.Schema({
   senderId:{
-    type:mongose.Schema.Types.ObjectId,
+    type:mongoose.Schema.Types.ObjectId,
     ref:"User",
     require:"true"
   },
   
     receiverId:{
-        type: mongose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref:"User",
         required:true,
     },
@@ -24,8 +24,8 @@ const messageSchema =new mongoose.Schema({
     }
   
 
-},{timestamps:"true"})
+},{timestamps:true})
 
-const Menssage =mongoose.model("Menssage",messageSchema);
+const Message =mongoose.model("Menssage",messageSchema);
 
 export default Message;
