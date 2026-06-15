@@ -1,5 +1,4 @@
 import express from "express";
-import {connectDB} from "./lib/db.js";
 import cors from "cors";
 import {clerkMiddleware} from "@clerk/express";
 import User from "./models/user.model.js";
