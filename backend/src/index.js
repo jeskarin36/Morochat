@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cors({origin:FRONTEND_URL,credentials:true}))
 app.use(clerkMiddleware())
 
-app.get("/",(req,res)=>{
+app.get("/healf",(req,res)=>{
     res.status(200).json({ok:true})
 })
 
